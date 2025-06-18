@@ -1,0 +1,14 @@
+# make a command that gives the player the teliport stick when you do /teleportstick
+command /teleportstick:
+    trigger:
+        give player stick named "&bTeleport Stick" with lore "portal 3????"
+# this stuff shoudl make the player teliport 10 blocks infront of them :3
+on rightclick with stick:
+    if name of player's tool is "&bTeleport Stick":
+        broadcast:"teliportimg!"
+        set {_vec} to vector from yaw pitch of player
+        multiply {_vec} by 10
+        teleport player to location of player offset by {_vec}
+        send "&aTeleported 10 blocks forward!" to player
+        # ngl this took me a while as i had to search up a bunch of events and other sh*t, i hope this works
+        # bendie if this dont work pls tell me what the fuck is wrong with it the internet is not helping :/
