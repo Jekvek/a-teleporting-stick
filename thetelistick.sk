@@ -11,4 +11,4 @@ on rightclick with stick:
         teleport player to location of player offset by {_vec}
         send "&aTeleported 10 blocks forward!" to player
         # ngl this took me a while as i had to search up a bunch of events and other sh*t, i hope this works
-        # bendie if this dont work pls tell me what the fuck is wrong with it the internet is not helping :/
+      
